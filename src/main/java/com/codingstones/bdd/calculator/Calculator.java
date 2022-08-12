@@ -12,4 +12,8 @@ public class Calculator {
     public int currentValue(){
         return value;
     }
+
+    public void divide(int dividend, int divisor) {
+        value = dividend / divisor;
+    }
 }

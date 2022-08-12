@@ -5,6 +5,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
@@ -37,4 +38,8 @@ public class CalculatorSteps {
         calculator.subtract(arg1, arg2);
     }
 
+    @When("^I divide (\\d+) and (\\d+)$")
+    public void iDivideAnd(int arg0, int arg1) {
+        calculator.divide(arg0, arg1);
+    }
 }
